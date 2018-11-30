@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Koire</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<script type="text/javascript">
+if (screen.width <= 699) {
+window.location.assign("http://m.koire.gq/");
+}
+</script>
+<style>
+.nav{
+    background-color: #fff;
+	display: inline-block;
+    width: 60px;
+	bottom: 0;
+    position: absolute;
+}
+.nav a {
+    float: top;
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 12px;
+	padding: 12px;
+}
+.passnote{
+left: calc(100%/3.5);
+border: 3px solid purple;
+border-radius:25px;
+top: 10%;
+height: 400px;
+width: 250px;
+background-color: grey;
+position: absolute;
+text-align: center;
+opacity: 0;
+pointer-events: none;
+}
+
+.cmd{
+left: calc(100%/3.5);
+border: 3px solid purple;
+border-radius:25px;
+top: 10%;
+height: 250px;
+width: 500px;
+background-color: black;
+position: absolute;
+padding: 10px;
+color: green;
+opacity: 0;
+pointer-events: none;
+}
+
+.proj{
+right: calc(100%/3.5);
+top: 10%;
+border: 3px solid purple;
+border-radius:25px;
+background-color: grey;
+top: 10%;
+height: 350px;
+width: 500px;
+position: absolute;
+padding: 10px;
+opacity: 0;
+pointer-events: none;
+}
+
+.easter{
+opacity: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	margin: 0;
+}
+</style>
+</head>
+<body>
+	<img src="img/logo.png" height="500" width="500" style="position:absolute;top: 10%;left: calc(100%/3.5);">
+	<div class="nav">
+	<a href="https://www.youtube.com/channel/UCbAXZJ8GReMmPHkCgbZF3QA"><img src="img/yt.png" width="100%" height="100%"><br>My Channel</a>
+	<a href="javascript:document.getElementById('cmd').setAttribute( 'style', 'opacity:1; pointer-events: auto;')"><img src="img/cmd.png" width="90%" height="100%"><br>CMD</a>
+	<a href="javascript:document.getElementById('passnote').setAttribute( 'style', 'opacity:1; pointer-events: auto;')"><img src="img/note.png" width="90%" height="100%">Passwords</a>
+	<a href="javascript:document.getElementById('proj').setAttribute( 'style', 'opacity:1; pointer-events: auto;')"><img src="img/folder.png" width="90%" height="100%"><br>Projects</a>
+    <a href="/"><img src="img/logo.png" width="100%" height="100%"></a>
+    </div>
+	
+	<div class="passnote" id="passnote">
+	<b><u>Passwords</u></b><br>
+	e4sy<br>
+	acce55<br>
+	somewh3re<br>
+	the8e<br>
+	easteregg?<br>
+	rly<br>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<a style="text-decoration: none !important;color: black !important;" href="javascript:document.getElementById('passnote').setAttribute( 'style', 'opacity:0; pointer-events: none;')">Close</a>
+    </div>
+	
+	<div class="proj" id="proj">
+	<a style="text-decoration: none !important;color: Black !important;" href="bb.html">Bouncing Balls</a><br>
+	<a style="text-decoration: none !important;color: Black !important;" href="crash.html">Crash</a><br>
+	<a style="text-decoration: none !important;color: Black !important;" href="logame.html">Log Jumper</a>
+	<a style="position: absolute; bottom: 10; right: 10;text-decoration: none !important;color: black !important;" href="javascript:document.getElementById('proj').setAttribute( 'style', 'opacity:0; pointer-events: none;')">Close</a>
+    </div>
+	
+	<div class="cmd" id="cmd">
+	<u class="easter" id="easter">Nice that you found it!</u><br>
+	
+	<input id="commandline" type="text" placeholder="..." style="position: absolute; bottom: 10; width: 85%;">
+	<button type="button" style="position: absolute; bottom: 10; right: 3%; width: 10%;" onclick="javascript:if(document.getElementById('commandline').value == 'easter'){document.getElementById('easter').style.opacity = 1;}else{document.getElementById('easter').style.opacity = 0;}">>></button>
+	
+	<a style="position: absolute; top: 10; right: 10; text-decoration: none !important;color: white !important;" href="javascript:document.getElementById('cmd').setAttribute( 'style', 'opacity:0; pointer-events: none;')">Close</a>
+    </div>
+</body>
+</html>
